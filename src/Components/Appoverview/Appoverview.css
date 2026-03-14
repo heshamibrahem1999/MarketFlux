@@ -1,0 +1,45 @@
+.app-overview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.download{
+    background-color: #383737!important;
+    height: 50px;
+    width: 200px;
+    border: none!important;
+    margin-top: 30px!important;
+}
+
+.download:hover{
+    background-color: white!important;
+    color: black!important;
+    border: none!important;
+}
+
+.card-row{
+    margin-top: 80px!important;
+}
+
+h1{
+    font-size: 70px!important;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0px!important;
+    line-height: 60px!important;
+    margin-top: 55px!important
+}
+
+.tech{
+    color: white;
+}
+
+.other{
+    color: #949494;
+}

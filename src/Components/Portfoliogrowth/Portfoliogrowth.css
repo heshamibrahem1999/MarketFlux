@@ -1,0 +1,65 @@
+.button-time{
+    background-color: transparent!important;
+    color: gray!important;
+    border: none!important;
+}
+
+.button-time:hover{
+    color: white!important;
+}
+
+.button-time.active-time {
+  color: white !important;
+  font-weight: 600;
+}
+
+.portfolio-growth{
+    position: relative;
+}
+
+.time-buttons{
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+    display: flex;
+    z-index: 400;
+}
+
+.data-range{
+    margin-left: 20px;
+    color:white;
+}
+
+.select-timeframe{
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+.select-timeframe:active, .select-timeframe:focus, .select-timeframe:hover {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.options{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.chart-wrapper {
+  width: 100%;
+}
+
+.chart-loading {
+  opacity: 0.96;
+}
+
+.button-time {
+  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease !important;
+}
+
+.button-time:hover {
+  transform: translateY(-1px);
+}

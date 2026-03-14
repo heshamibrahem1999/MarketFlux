@@ -1,0 +1,27 @@
+.custom-navbar{
+    background-color: black;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link{
+    color: white;
+}
+
+.custom-navbar .nav-link:hover{
+    color: #00d4ff;
+}
+
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* in order to cancel hover */
+.navbar-brand:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.toggle{
+    color: white !important;
+}

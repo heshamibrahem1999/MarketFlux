@@ -1,0 +1,21 @@
+.cards{
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+h6, p{
+    margin-bottom: 0!important;
+}
+
+h6 {
+    margin-top: 50px!important;
+}
+
+p {
+    color: #949494;
+}
