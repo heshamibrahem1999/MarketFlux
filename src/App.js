@@ -1,15 +1,21 @@
-import './App.css';
-import Appoverview from './Components/Appoverview/Appoverview';
-import Header from './Components/Header/Header';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Portfoliogrowth from './Components/Portfoliogrowth/Portfoliogrowth';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Components/Header/Header";
+import Appoverview from "./Components/Appoverview/Appoverview";
+import Portfoliogrowth from "./Components/Portfoliogrowth/Portfoliogrowth";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-black min-vh-100 text-light">
       <Header />
-      <Appoverview />
-      <Portfoliogrowth data={[1, 2, 3, 4, 5]} />
+
+      <main>
+        <Container fluid="lg" className="py-4">
+          <Appoverview />
+          <Portfoliogrowth />
+        </Container>
+      </main>
     </div>
   );
 }
