@@ -5,9 +5,13 @@
         "horz",
         "MARKETFLUX",
         "OHLC",
+        "Pcnt",
         "Portfoliogrowth",
         "rangesub",
+        "rsvg",
+        "rticker",
         "showgraph",
+        "timespan",
         "TOMMOROW",
         "webfonts"
     ]

@@ -1,65 +1,328 @@
-.button-time{
-    background-color: transparent!important;
-    color: gray!important;
-    border: none!important;
+.tv-shell {
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 18px 18px 10px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.button-time:hover{
-    color: white!important;
+.tv-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
 }
 
-.button-time.active-time {
-  color: white !important;
+.tv-topbar-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tv-symbol-form {
+  margin-bottom: 2px;
+}
+
+.tv-symbol-input {
+  background: #111;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  outline: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 13px;
+  width: 130px;
+}
+
+.tv-symbol-input::placeholder {
+  color: #8f97a3;
+}
+
+.tv-instrument-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #b7bdc6;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.tv-company-name {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tv-dot {
+  opacity: 0.45;
+}
+
+.tv-price-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 2px;
+}
+
+.tv-main-price {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.tv-currency {
+  font-size: 15px;
+  color: #adb5bf;
+  margin-left: -8px;
+}
+
+.tv-price-change {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.tv-price-change.positive {
+  color: #8fe0ca;
+}
+
+.tv-price-change.negative {
+  color: #e6a0a8;
+}
+
+.tv-ohlc {
+  font-size: 15px;
+  color: #d0d5dd;
+  white-space: nowrap;
+}
+
+.tv-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tv-icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  color: #d0d5dd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tv-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.tv-chart-layout {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.tv-toolbar {
+  background: rgba(17, 17, 17, 0.95);
+  border-radius: 16px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  height: fit-content;
+  margin-top: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tv-tool-btn {
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background: transparent;
+  color: #d5dae1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tv-tool-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tv-chart-main {
+  position: relative;
+  min-width: 0;
+}
+
+.tv-chart-container {
+  width: 100%;
+  min-height: 540px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #000;
+}
+
+.tv-loading-badge,
+.tv-error-badge {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  z-index: 10;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  backdrop-filter: blur(8px);
+}
+
+.tv-loading-badge {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f3f4f6;
+}
+
+.tv-error-badge {
+  background: rgba(255, 80, 80, 0.18);
+  color: #ffd7d7;
+  max-width: 320px;
+}
+
+.tv-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 4px 0;
+  margin-top: 10px;
+}
+
+.tv-timeframes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tv-timeframe-btn {
+  background: transparent;
+  border: 0;
+  color: #aeb5bf;
+  font-size: 15px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tv-timeframe-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.tv-timeframe-btn.active {
+  color: #ffffff;
   font-weight: 600;
 }
 
-.portfolio-growth{
-    position: relative;
+.tv-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.time-buttons{
-    position: absolute;
-    bottom: 25px;
-    left: 35px;
-    display: flex;
-    z-index: 400;
+.tv-date-range {
+  color: #c7ccd4;
+  font-size: 15px;
 }
 
-.data-range{
-    margin-left: 20px;
-    color:white;
+.tv-range-select.form-select {
+  background-color: transparent;
+  color: #ffffff;
+  border: 0;
+  box-shadow: none !important;
+  padding-right: 28px;
+  font-size: 15px;
+  width: auto;
+  min-width: 110px;
 }
 
-.select-timeframe{
-    background-color: transparent;
-    color: white;
-    border: none;
-    margin-left: 10px;
+.tv-range-select.form-select:focus {
+  border: 0;
+  box-shadow: none !important;
 }
 
-.select-timeframe:active, .select-timeframe:focus, .select-timeframe:hover {
-    background-color: transparent;
-    border: none;
-    outline: none;
+.tv-range-select option {
+  background: #111111;
+  color: #ffffff;
 }
 
-.options{
-    background-color: #1e1e1e;
-    color: white;
+@media (max-width: 991px) {
+  .tv-chart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tv-toolbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .tv-chart-container {
+    min-height: 470px;
+  }
+
+  .tv-main-price {
+    font-size: 32px;
+  }
 }
 
-.chart-wrapper {
-  width: 100%;
-}
+@media (max-width: 767px) {
+  .tv-shell {
+    padding: 14px 12px 10px;
+    border-radius: 16px;
+  }
 
-.chart-loading {
-  opacity: 0.96;
-}
+  .tv-topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-.button-time {
-  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease !important;
-}
+  .tv-topbar-right {
+    justify-content: flex-end;
+  }
 
-.button-time:hover {
-  transform: translateY(-1px);
+  .tv-main-price {
+    font-size: 28px;
+  }
+
+  .tv-instrument-line,
+  .tv-price-line,
+  .tv-date-range,
+  .tv-timeframe-btn,
+  .tv-range-select.form-select,
+  .tv-ohlc {
+    font-size: 13px;
+  }
+
+  .tv-chart-container {
+    min-height: 400px;
+  }
 }

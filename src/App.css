@@ -12,3 +12,27 @@
 .text-right{
     text-align: right;
 }
+
+.vh-100{
+    height: 100vh;
+}
+
+.p-vh-10{
+    padding-top: 10vh;
+}
+
+.p-vh-20{
+    padding-top: 20vh;
+}
+
+.p-vh-40{
+    padding-top: 40vh;
+}
+
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}

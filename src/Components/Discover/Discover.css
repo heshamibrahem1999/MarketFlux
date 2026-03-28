@@ -1,0 +1,73 @@
+.body-discover {
+  background-color: rgba(138, 135, 135, 0.116);
+  justify-content: center;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 10%;
+}
+
+.discover {
+  text-align: center;
+  line-height: 1.4;
+}
+
+.discover-letter {
+  display: inline-block;
+  color: #8b8b8b;
+  animation: colorFill 0.4s ease forwards;
+}
+
+.svg-container{
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    animation: tickerMoves 10s ease infinite alternate;
+}
+
+.rsvg-container{
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    animation: rtickerMove 10s ease infinite alternate;
+}
+
+.bi-currency-bitcoin{
+    bottom: 50vh;
+}
+
+.bi-apple{
+    bottom: 50vh;
+    left: 50%;
+}
+
+.bi-amd{
+    left: 50%;
+}
+
+@keyframes colorFill {
+  from {
+    color: #8b8b8b;
+  }
+  to {
+    color: #f5d08a;
+  }
+}
+
+@keyframes tickerMoves {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+
+@keyframes rtickerMove {
+  from {
+    transform: translate(50%, 0);
+  }
+  to {
+    transform: translate(0, 50%);
+  }
+}
